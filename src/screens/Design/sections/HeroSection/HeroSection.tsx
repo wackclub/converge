@@ -15,9 +15,11 @@ export const HeroSection = (): JSX.Element => {
 
                 <div className="flex items-start gap-6 mt-12">
                     <div className="relative">
-                        <Button className="h-[77px] w-[261px] bg-[#fc7e3b] hover:bg-[#fc7e3b]/90 rounded [font-family:'Chivo_Mono',Helvetica] font-medium text-white text-2xl">
-                            SIGN UP &gt;:)
-                        </Button>
+                        <a href="https://forms.hackclub.com/converge-signup">
+                            <Button className="h-[77px] w-[261px] bg-[#fc7e3b] hover:bg-[#fc7e3b]/90 rounded [font-family:'Chivo_Mono',Helvetica] font-medium text-white text-2xl">
+                                SIGN UP &gt;:)
+                            </Button>
+                        </a>
                         <img
                             className="w-[67px] h-[67px] absolute -left-6 -top-4 object-cover"
                             style={{ transform: 'rotate(4deg)' }}
