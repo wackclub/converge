@@ -44,18 +44,17 @@ export const HowItWorksSection = (): JSX.Element => {
 
                 <div className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-2xl text-center mb-16">
                     <p className="text-pretty">
-                        ▪ BUILD TWO CHATBOTS - CHOOSING A DIFFERENT PLATFORM FOR EACH ONE
+                        ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> - CHOOSING A DIFFERENT PLATFORM FOR EACH ONE
                         IS HIGHLY ENCOURAGED, BUT NOT REQUIRED
                         <br />▪ OTHER PEOPLE NEED TO BE ABLE TO USE MOST PARTS OF YOUR BOT
-                        <br />▪ FOR EACH HOUR YOU CODE YOUR PROJECTS, YOU GAIN 🪙 ONE TOKEN.
-                        EARN FOUR TOKENS (OR MORE) TO UNLOCK THE SHOP!
+                        <br />▪ FOR EACH HOUR YOU CODE YOUR PROJECTS, YOU GAIN 🪙 ONE TOKEN.{" "}
+                        <b className="font-extrabold">EARN FOUR TOKENS</b> (OR MORE) TO UNLOCK THE SHOP!
                         <br />▪ IF YOU&apos;RE MAKING BOTS FOR TWO DIFFERENT PLATFORMS, YOU
-                        GET ONE
-                        EXTRA TOKEN FOR EACH PROJECT!
+                        GET  <b className="font-extrabold">ONE
+                            EXTRA TOKEN</b> FOR EACH PROJECT (SO TWO IN TOTAL)
                         <br />▪ USE TOKENS TO BUY REWARDS IN THE{" "}
                         <span className="line-through">SHOP</span>{" "}
-                        <span className="font-normal">EMPORIU</span>
-                        <span className="font-light">M.</span>
+                        <span className="font-normal">EMPORIUM.</span>
                     </p>
                 </div>
 
@@ -83,15 +82,12 @@ export const HowItWorksSection = (): JSX.Element => {
                 <p className="font-['Chivo_Mono',Helvetica] font-extralight text-[#552200] text-xs text-center max-w-md">
                     IS YOUR FAVOURITE APP NOT ON THIS LIST?
                     <br />
-                    <Button
-                        variant="link"
-                        className="font-['Chivo_Mono',Helvetica] font-extralight text-[#552200] text-xs underline p-0 h-auto"
-                    >
+                    <a href="https://forms.hackclub.com/converge-request" className="font-['Chivo_Mono',Helvetica] font-extralight text-[#552200] text-xs underline p-0 h-auto">
                         SEND A REQUEST
-                    </Button>{" "}
+                    </a>{" "}
                     FOR IT TO BE ADDED.
                 </p>
             </div>
-        </section>
+        </section >
     );
 };
