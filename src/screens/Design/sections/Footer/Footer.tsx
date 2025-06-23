@@ -9,13 +9,13 @@ export const Footer = (): JSX.Element => {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <h3 className="[font-family:'Chivo',Helvetica] font-semibold text-2xl mb-2">CONVERGE</h3>
-                        <p className="[font-family:'Chivo_Mono',Helvetica] font-light text-sm opacity-80">
+                        <p className="[font-family:'Chivo',Helvetica] font-light text-sm opacity-80">
                             MADE WITH {"<3"} BY <a href="https://skyfall.dev/" className="underline" target="_blank">SKYFALL</a>
                         </p>
                     </div>
 
                     <div className="flex flex-col items-center md:items-end">
-                        <p className="[font-family:'Chivo_Mono',Helvetica] font-light text-sm opacity-80">
+                        <p className="[font-family:'Chivo',Helvetica] font-light text-sm opacity-80">
                             &copy; {currentYear} Hack Club
                         </p>
                     </div>

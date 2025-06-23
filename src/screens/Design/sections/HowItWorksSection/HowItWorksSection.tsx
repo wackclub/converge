@@ -42,7 +42,7 @@ export const HowItWorksSection = (): JSX.Element => {
                     HOW THIS WORKS
                 </h2>
 
-                <div className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-xl text-center mb-16">
+                <div className="font-['Fraunces',Helvetica] text-[#552200] text-xl text-center mb-16">
                     <div className="text-pretty space-y-2">
                         <p>
                             ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> — choosing a different platform for each one
@@ -84,14 +84,14 @@ export const HowItWorksSection = (): JSX.Element => {
                                     src={platform.image}
                                 />
                             </div>
-                            <span className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-base text-center">
+                            <span className="font-['Chivo',Helvetica] font-medium text-[#552200] text-base text-center">
                                 {platform.name}
                             </span>
                         </div>
                     ))}
                 </div>
 
-                <p className="font-['Chivo_Mono',Helvetica] font-extralight text-[#552200] text-xs text-center max-w-md">
+                <p className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-xs text-center max-w-md">
                     IS YOUR FAVOURITE APP NOT ON THIS LIST?
                     <br />
                     <a href="https://forms.hackclub.com/converge-request" className="font-['Chivo_Mono',Helvetica] font-extralight text-[#552200] text-xs underline p-0 h-auto">

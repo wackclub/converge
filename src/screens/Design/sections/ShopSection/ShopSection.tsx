@@ -123,8 +123,8 @@ export const ShopSection = (): JSX.Element => {
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center [font-family:'Chivo',Helvetica] font-bold text-[#552200] mb-2 sm:mb-4">
                     THE EMPORIUM
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center [font-family:'Chivo_Mono',Helvetica] font-light text-[#552200] mb-8 sm:mb-10 lg:mb-12 px-4">
-                    SPEND YOUR HARD-EARNED TOKENS ON THESE AWESOME REWARDS!
+                <p className="sm:text-base md:text-xl lg:text-2xl text-center [font-family:'Fraunces',Helvetica] text-[#552200] mb-8 sm:mb-10 lg:mb-12 px-4">
+                    Spend your hard-earned tokens for some awesome rewards!
                 </p>
 
                 {/* Top Row Carousel */}
@@ -213,7 +213,7 @@ export const ShopSection = (): JSX.Element => {
 
                 {/* Mobile swipe indicator */}
                 <div className="flex sm:hidden justify-center mt-4">
-                    <p className="text-xs text-[#552200]/60 [font-family:'Chivo_Mono',Helvetica]">
+                    <p className="text-xs text-[#552200]/60 [font-family:'Fraunces',Helvetica]">
                         ← Swipe to see more →
                     </p>
                 </div>

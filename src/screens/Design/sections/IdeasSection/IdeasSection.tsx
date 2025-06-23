@@ -9,20 +9,20 @@ export const IdeasSection = (): JSX.Element => {
     // Ideas for each platform
     const [platformIdeas, setPlatformIdeas] = useState([
         {
-            platform: "SLACK",
-            idea: "A MEETING SCHEDULER BOT THAT HELPS PEOPLE FIND THE BEST TIME TO MEET BASED ON EVERYONE'S AVAILABILITY + TIMEZONES"
+            platform: "Slack",
+            idea: "A meeting scheduler bot (like LettuceMeet or schej.it) that helps people decide on meeting/event times"
         },
         {
-            platform: "DISCORD",
-            idea: "A GAME NIGHT ORGANIZER THAT HELPS COMMUNITIES VOTE ON GAMES TO PLAY (AND AUTOMATICALLY CREATES VOICE CHANNELS)"
+            platform: "Discord",
+            idea: "A giveaway bot that gives you more raffle tickets after you complete certain tasks (like boosting a server)"
         },
         {
-            platform: "SIGNAL",
-            idea: "AN EASY-TO-USE STICKER MAKER THAT CAN REMOVE BACKGROUNDS FROM IMAGES SENT TO THE BOT"
+            platform: "Signal",
+            idea: "A sticker maker bot that removes the background from images sent to it and converts it into a Signal sticker"
         },
         {
-            platform: "TELEGRAM",
-            idea: "A DAILY NEWS DIGEST BOT THAT SENDS PERSONALIZED NEWS SUMMARIES WITH RSS FEEDS"
+            platform: "Telegram",
+            idea: "A news digest bot that subscribes to RSS feeds and gives you a summary of what's new"
         }
     ]);
 
@@ -91,10 +91,10 @@ export const IdeasSection = (): JSX.Element => {
 
 Each idea should be practical, fun, and something teenagers would actually want to build and use. Format your response as JSON with this structure:
 [
-  {"platform": "SLACK", "idea": "DESCRIPTION IN ALL CAPS"},
-  {"platform": "DISCORD", "idea": "DESCRIPTION IN ALL CAPS"},
-  {"platform": "SIGNAL", "idea": "DESCRIPTION IN ALL CAPS"},
-  {"platform": "TELEGRAM", "idea": "DESCRIPTION IN ALL CAPS"}
+  {"platform": "Slack", "idea": "Description"},
+  {"platform": "Discord", "idea": "Description"},
+  {"platform": "Signal", "idea": "Description"},
+  {"platform": "Telegram", "idea": "Description"}
 ]
 
 ONLY output JSON. Do not add any additional information, instructions, questions etc. This means your response should always start with '['
@@ -131,8 +131,8 @@ and end with ']' (without the quotes.)`
                     A FEW IDEAS
                 </h2>
 
-                <p className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-2xl text-center mb-10">
-                    THESE ARE JUST SUGGESTIONS - YOU'RE FREE TO BUILD WHATEVER YOU WANT!
+                <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
+                    These are just suggestions - feel free to make something that doesn't fit these ideas.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 w-full">
@@ -145,10 +145,10 @@ and end with ']' (without the quotes.)`
       `}
                         >
                             <CardContent className="p-6">
-                                <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-xl mb-2">
+                                <h3 className="font-['Fraunces',Helvetica] font-bold text-[#552200] text-xl mb-2">
                                     {item.platform}
                                 </h3>
-                                <p className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-base">
+                                <p className="font-['Fraunces',Helvetica] text-[#552200] text-base">
                                     {item.idea}
                                 </p>
                             </CardContent>
@@ -159,17 +159,17 @@ and end with ']' (without the quotes.)`
                 <Button
                     onClick={generateNewIdeas}
                     disabled={isGenerating}
-                    className="bg-[#552200] hover:bg-[#441a00] text-white font-['Chivo_Mono',Helvetica] font-medium text-lg px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="bg-[#552200] hover:bg-[#441a00] text-white font-['Fraunces',Helvetica] font-medium text-lg px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                     {isGenerating ? (
                         <>
                             <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                            GENERATING...
+                            thinking...
                         </>
                     ) : (
                         <>
                             <Sparkles className="mr-2 h-5 w-5" />
-                            GENERATE NEW IDEAS
+                            gimme more!
                         </>
                     )}
                 </Button>
