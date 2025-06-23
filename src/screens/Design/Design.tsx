@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer } from "./sections/Footer";
 import { HelpSection } from "./sections/HelpSection";
+import { FaqSection } from "./sections/FaqSection";
 import { HeroSection } from "./sections/HeroSection";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { IdeasSection } from "./sections/IdeasSection";
@@ -13,6 +14,7 @@ export const Design = (): JSX.Element => {
             <HowItWorksSection />
             <ShopSection />
             <IdeasSection />
+            <FaqSection />
             <HelpSection />
             <Footer />
         </main>
