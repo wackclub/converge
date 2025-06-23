@@ -44,30 +44,15 @@ export const HowItWorksSection = (): JSX.Element => {
 
                 <div className="font-['Fraunces',Helvetica] text-[#552200] text-3xl text-center mb-16">
                     <div className="text-pretty space-y-4">
-                        <p>
-                            ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> — choosing a different platform for each one
-                            is highly encouraged, but not required.
-                        </p>
+                        <p><b className="font-extrabold">▪ Build two chatbots</b> - ideally on <i>different</i> platforms (but it’s not required).</p>
 
-                        <p>
-                            ▪ Other people need to be able to use most parts of your bot.
-                        </p>
+                        <p><b className="font-extrabold">▪ Make them usable.</b> Other people should be able to interact with most parts of your bots.</p>
 
-                        <p>
-                            ▪ For each hour you code your projects, you gain 🪙 one token.{" "}
-                            <b className="font-extrabold">Earn four tokens</b> (or more) to unlock the shop!
-                        </p>
+                        <p><b className="font-extrabold">▪ Earn 🪙 1 token per hour</b> of coding. Hit <b className="font-extrabold">4 tokens</b> to unlock the <i>Emporium.</i></p>
 
-                        <p>
-                            ▪ If you’re making bots for two different platforms, you get{" "}
-                            <b className="font-extrabold">one extra token</b> for each project (so two in total).
-                        </p>
+                        <p><b className="font-extrabold">▪ Bonus tokens:</b> Use two different platforms? You get <b className="font-extrabold">+1 token per bot</b> — that’s <b className="font-extrabold">2 extra tokens</b>.</p>
 
-                        <p>
-                            ▪ Use tokens to buy rewards in the{" "}
-                            <span className="line-through">shop</span>{" "}
-                            <span className="font-normal">emporium</span>.
-                        </p>
+                        <p><b className="font-extrabold">▪ Spend your tokens</b> on rewards in the Emporium.</p>
                     </div>
                 </div>
                 <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-[26dx] text-center mb-8">
