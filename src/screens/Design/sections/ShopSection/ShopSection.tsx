@@ -78,9 +78,9 @@ const bottomRowCards = [
         Icon: SiAnthropic,
     },
     {
-        title: "CLOUDFLARE PRO",
+        title: "$20 CLOUDFLARE CREDITS",
         description:
-            "ONE MONTH OF CLOUDFLARE PRO FOR WEB PERFORMANCE & SECURITY!",
+            "PERFECT FOR HOSTING WEBSITES (WITH WORKERS & PAGES), STORING IMAGES AND DATA (WITH R2 AND CF IMAGES), AND PROTECTING YOUR WEBSITES FROM DDoS ATTACKS.",
         color: "bg-[#f38020]", // Cloudflare orange
         tokens: 4,
         Icon: SiCloudflare,
