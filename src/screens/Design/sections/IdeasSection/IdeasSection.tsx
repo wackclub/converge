@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Button } from "../../../../components/ui/button";
 import { Sparkles, Loader2 } from "lucide-react";
@@ -26,8 +26,58 @@ export const IdeasSection = (): JSX.Element => {
         }
     ]);
 
+    // Theme list (40 total)
+    const themes = [
+        "meme discovery",
+        "music recs",
+        "flash trivia",
+        "daily jokes",
+        "movie night inspo",
+        "study break challenges",
+        "mini coding puzzles",
+        "photo-of-the-day contests",
+        "emoji art battles",
+        "random acts of kindness",
+        "fun fact drops",
+        "DIY micro-projects",
+        "plant-parent check-ins",
+        "eco-friendly dares",
+        "street food finds",
+        "fashion inspo swaps",
+        "podcast highlights",
+        "book club picks",
+        "virtual scavenger hunts",
+        "playlist mashups",
+        "sport highlight recaps",
+        "urban exploration tips",
+        "language exchange bites",
+        "coffee chat icebreakers",
+        "goal-setting sprints",
+        "well-being reminders",
+        "career curiosity snippets",
+        "street art spotlights",
+        "tech hack tips",
+        "craft-of-the-day",
+        "taste-test swaps",
+        "budget-life hacks",
+        "science wonder bytes",
+        "comic strip prompts",
+        "flash fiction prompts",
+        "photo filter duels",
+        "daily haiku drops",
+        "joke-off battles",
+        "random compliment bot"
+    ];
+
+    const getRandomThemes = (count = 4): string[] => {
+        const shuffled = [...themes].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+    };
+
     const generateNewIdeas = async () => {
         setIsGenerating(true);
+        const selectedThemes = getRandomThemes();
+
         try {
             const response = await fetch('https://ai.hackclub.com/chat/completions', {
                 method: 'POST',
@@ -37,7 +87,9 @@ export const IdeasSection = (): JSX.Element => {
                 body: JSON.stringify({
                     messages: [{
                         role: 'user',
-                        content: `Generate 4 creative and unique bot ideas for different messaging platforms (Slack, Discord, Signal, Telegram). Each idea should be practical, fun, and something teenagers would actually want to build and use. Format your response as JSON with this structure:
+                        content: `Generate 4 creative and unique bot ideas for different messaging platforms (Slack, Discord, Signal, Telegram). Each idea should be themed around **one** of the following topics: ${selectedThemes.join(", ").toUpperCase()}. Match one idea per theme.
+
+Each idea should be practical, fun, and something teenagers would actually want to build and use. Format your response as JSON with this structure:
 [
   {"platform": "SLACK", "idea": "DESCRIPTION IN ALL CAPS"},
   {"platform": "DISCORD", "idea": "DESCRIPTION IN ALL CAPS"},
@@ -45,7 +97,8 @@ export const IdeasSection = (): JSX.Element => {
   {"platform": "TELEGRAM", "idea": "DESCRIPTION IN ALL CAPS"}
 ]
 
-Make the ideas creative and different from typical bots - think about things like productivity, entertainment, community building, or unique utilities that would be genuinely useful or fun. Keep the ideas short and snappy.`
+ONLY output JSON. Do not add any additional information, instructions, questions etc. This means your response should always start with '['
+and end with ']' (without the quotes.)`
                     }]
                 }),
             });
@@ -54,14 +107,13 @@ Make the ideas creative and different from typical bots - think about things lik
                 const data = await response.json();
                 const content = data.choices[0].message.content;
 
-                // Try to parse the JSON response
                 try {
+                    console.log(content);
                     const newIdeas = JSON.parse(content);
                     if (Array.isArray(newIdeas) && newIdeas.length === 4) {
                         setPlatformIdeas(newIdeas);
                     }
                 } catch (parseError) {
-                    // If JSON parsing fails, try to extract ideas from the text
                     console.log('Failed to parse JSON, using fallback');
                 }
             }
