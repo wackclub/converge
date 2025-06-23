@@ -58,7 +58,7 @@ export const HelpSection = (): JSX.Element => {
                 CHANNEL ON THE SLACK
             </p>
 
-            <a href="https://hackclub.slack.com/archives/C091UF79VDM" target="_blank" className="w-full sm:w-auto">
+            <a href="https://hackclub.slack.com/archives/C091UF79VDM" target="_blank" className="w-full sm:w-auto flex justify-center">
                 <Button className="bg-[#552200] hover:bg-[#441a00] text-white font-['Fraunces',Helvetica] font-medium text-2xl px-12 py-6 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
                     add me to the channel!
                 </Button>
