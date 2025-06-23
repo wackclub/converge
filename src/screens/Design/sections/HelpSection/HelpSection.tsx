@@ -28,7 +28,7 @@ export const HelpSection = (): JSX.Element => {
                 Need help?
             </h2>
 
-            <p className="[font-family:'Fraunces',Helvetica] text-[#552200] text-lg sm:text-2xl text-center mb-10">
+            <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
                 Here are a couple guides to bot dev that could prove helpful. (coming soon!)
             </p>
 

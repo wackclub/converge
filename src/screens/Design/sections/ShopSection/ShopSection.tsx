@@ -123,7 +123,7 @@ export const ShopSection = (): JSX.Element => {
                 <h2 className="text-4xl sm:text-6xl text-center [font-family:'Fraunces',Helvetica] font-bold text-[#552200] mb-4">
                     The Emporium
                 </h2>
-                <p className="sm:text-base md:text-xl lg:text-2xl text-center [font-family:'Fraunces',Helvetica] text-[#552200] mb-8 sm:mb-10 lg:mb-12 px-4">
+                <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
                     Spend your hard-earned tokens for some awesome rewards!
                 </p>
 

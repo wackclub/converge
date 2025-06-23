@@ -42,7 +42,7 @@ export const HowItWorksSection = (): JSX.Element => {
                     Here's how it works...
                 </h2>
 
-                <div className="font-['Fraunces',Helvetica] text-[#552200] text-3xl text-center mb-16">
+                <div className="font-['Fraunces',Helvetica] text-[#552200] text-xl sm:text-3xl text-center mb-16">
                     <div className="text-pretty space-y-4">
                         <p><b className="font-extrabold">▪ Build two chatbots</b> - ideally on <i>different</i> platforms (but it’s not required).</p>
 
