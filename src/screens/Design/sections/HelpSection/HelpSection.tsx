@@ -29,14 +29,14 @@ export const HelpSection = (): JSX.Element => {
             </h2>
 
             <p className="[font-family:'Fraunces',Helvetica] text-[#552200] text-lg sm:text-2xl text-center mb-10">
-                Here are a couple guides to bot dev that could prove helpful:
+                Here are a couple guides to bot dev that could prove helpful. (coming soon!)
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-6 mb-8 w-full">
                 {guideCards.map((card, index) => (
                     <Card
                         key={index}
-                        className="flex-1 bg-neutral-100 rounded-xl border-none"
+                        className="flex-1 bg-neutral-100 border border-neutral-700 opacity-50 rounded-xl border-none"
                     >
                         <CardContent className="p-4 sm:p-6">
                             <h3 className="[font-family:'Fraunces',Helvetica] font-medium text-black text-base sm:text-lg">
