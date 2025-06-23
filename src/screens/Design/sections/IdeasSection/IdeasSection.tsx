@@ -139,7 +139,10 @@ and end with ']' (without the quotes.)`
                     {platformIdeas.map((item, index) => (
                         <Card
                             key={index}
-                            className="bg-[#f5e9d4] rounded-xl border-none transition-all duration-300 hover:shadow-lg"
+                            className={`
+        bg-[#f5e9d4] rounded-xl border-none transition-all duration-300 hover:shadow-lg
+        ${index >= 2 ? "hidden sm:block" : ""}
+      `}
                         >
                             <CardContent className="p-6">
                                 <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-xl mb-2">

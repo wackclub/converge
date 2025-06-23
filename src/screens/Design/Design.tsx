@@ -12,7 +12,7 @@ export const Design = (): JSX.Element => {
             <HeroSection />
             <HowItWorksSection />
             <ShopSection />
-            <IdeasSection />
+            <IdeasSection />    
             <HelpSection />
             <Footer />
         </main>

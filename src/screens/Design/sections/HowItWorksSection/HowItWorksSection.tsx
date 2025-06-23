@@ -24,7 +24,7 @@ export const HowItWorksSection = (): JSX.Element => {
             image: "https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-3.png",
             width: "w-16",
             height: "h-16",
-            leftPosition: "left-0",
+            leftPosition: "left-0 rounded-[10px]",
         },
         {
             name: "TELEGRAM",
@@ -74,7 +74,7 @@ export const HowItWorksSection = (): JSX.Element => {
                     SUPPORTED PLATFORMS
                 </h3>
 
-                <div className="flex justify-center gap-12 mb-10">
+                <div className="grid grid-cols-2 sm:flex justify-center gap-12 mb-10">
                     {platforms.map((platform, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="relative mb-4">
