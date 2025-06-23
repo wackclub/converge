@@ -42,7 +42,7 @@ export const HowItWorksSection = (): JSX.Element => {
                     HOW THIS WORKS
                 </h2>
 
-                <div className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-2xl text-center mb-16">
+                <div className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-xl text-center mb-16">
                     <div className="text-pretty space-y-2">
                         <p>
                             ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> — choosing a different platform for each one
