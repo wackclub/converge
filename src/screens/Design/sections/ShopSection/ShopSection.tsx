@@ -36,17 +36,9 @@ const topRowCards = [
         icon: "🐷",
     },
     {
-        title: "VERCEL PRO",
-        description:
-            "DEPLOY YOUR PROJECTS WITH VERCEL PRO FOR ONE MONTH!",
-        color: "bg-[#000000]", // Vercel black
-        tokens: 4,
-        Icon: SiVercel,
-    },
-    {
         title: "CURSOR PRO",
         description:
-            "ONE MONTH OF CURSOR PRO - THE AI-POWERED CODE EDITOR!",
+            "ONE MONTH OF CURSOR PRO - THE AI-POWERED CODE EDITOR",
         color: "bg-[#1e1e1e]", // Cursor dark theme
         tokens: 4,
         icon: "🤖",
@@ -54,14 +46,14 @@ const topRowCards = [
     {
         title: "SUPABASE PRO",
         description:
-            "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE & AUTH NEEDS!",
+            "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE & AUTH NEEDS",
         color: "bg-[#3ecf8e]", // Supabase green
         tokens: 5,
         Icon: SiSupabase,
     },
     {
         title: "GOOGLE PLAY DEVELOPER LICENSE",
-        description: "PUBLISH YOUR ANDROID APPS TO THE WORLD! LIFETIME LICENSE.",
+        description: "PUBLISH YOUR ANDROID APPS TO THE WORLD. LIFETIME LICENSE.",
         color: "bg-[#4285F4]", // Google blue
         tokens: 5,
         Icon: SiGoogleplay,
@@ -84,14 +76,6 @@ const bottomRowCards = [
         color: "bg-[#f38020]", // Cloudflare orange
         tokens: 4,
         Icon: SiCloudflare,
-    },
-    {
-        title: "DIGITALOCEAN CREDITS",
-        description:
-            "GET $25 OF DIGITALOCEAN CREDITS FOR CLOUD INFRASTRUCTURE!",
-        color: "bg-[#0080ff]", // DigitalOcean blue
-        tokens: 5,
-        Icon: SiDigitalocean,
     },
     {
         title: "DISCORD NITRO",
