@@ -61,7 +61,7 @@ const topRowCards = [
     },
     {
         title: "GOOGLE PLAY DEVELOPER LICENSE",
-        description: "PUBLISH YOUR ANDROID APPS TO THE WORLD!",
+        description: "PUBLISH YOUR ANDROID APPS TO THE WORLD! LIFETIME LICENSE.",
         color: "bg-[#4285F4]", // Google blue
         tokens: 5,
         Icon: SiGoogleplay,
