@@ -59,10 +59,8 @@ export const HelpSection = (): JSX.Element => {
             </p>
 
             <a href="https://hackclub.slack.com/archives/C091UF79VDM" target="_blank" className="w-full sm:w-auto">
-                <Button className="w-full sm:w-[318px] h-[51px] bg-[#3d3028] rounded text-white hover:bg-[#4d3d33]">
-                    <span className="[font-family:'Fraunces',Helvetica] text-base sm:text-xl">
-                        add me to the channel!
-                    </span>
+                <Button className="bg-[#552200] hover:bg-[#441a00] text-white font-['Fraunces',Helvetica] font-medium text-2xl px-12 py-6 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
+                    add me to the channel!
                 </Button>
             </a>
         </section>
