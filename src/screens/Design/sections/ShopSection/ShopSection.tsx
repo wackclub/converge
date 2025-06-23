@@ -7,121 +7,116 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "../../../../components/ui/carousel";
+
 import {
     SiHetzner,
     SiVercel,
-    SiAnthropic,
     SiSupabase,
-    SiPlanetscale,
+    SiAnthropic,
     SiCloudflare,
     SiDigitalocean,
-    SiLinear,
+    SiGoogleplay,
 } from "@icons-pack/react-simple-icons";
 
+const topRowCards = [
+    {
+        title: "$5 HETZNER CREDITS",
+        description:
+            "HOST YOUR NEXT PROJECT WITH HETZNER (ONE OF THE BEST BUDGET SERVER PROVIDERS AROUND)",
+        color: "bg-[#d83a2c]", // Hetzner red
+        tokens: 1,
+        Icon: SiHetzner,
+    },
+    {
+        title: "PORKBUN CREDITS",
+        description:
+            "GET $10 OF PORKBUN CREDITS TO BUY DOMAINS",
+        color: "bg-[#ff6b35]", // Porkbun orange
+        tokens: 2,
+        icon: "🐷",
+    },
+    {
+        title: "VERCEL PRO",
+        description:
+            "DEPLOY YOUR PROJECTS WITH VERCEL PRO FOR ONE MONTH!",
+        color: "bg-[#000000]", // Vercel black
+        tokens: 4,
+        Icon: SiVercel,
+    },
+    {
+        title: "CURSOR PRO",
+        description:
+            "ONE MONTH OF CURSOR PRO - THE AI-POWERED CODE EDITOR!",
+        color: "bg-[#1e1e1e]", // Cursor dark theme
+        tokens: 4,
+        icon: "🤖",
+    },
+    {
+        title: "SUPABASE PRO",
+        description:
+            "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE & AUTH NEEDS!",
+        color: "bg-[#3ecf8e]", // Supabase green
+        tokens: 5,
+        Icon: SiSupabase,
+    },
+    {
+        title: "GOOGLE PLAY DEVELOPER LICENSE",
+        description: "PUBLISH YOUR ANDROID APPS TO THE WORLD!",
+        color: "bg-[#4285F4]", // Google blue
+        tokens: 5,
+        Icon: SiGoogleplay,
+    },
+];
+
+const bottomRowCards = [
+    {
+        title: "ANTHROPIC CREDITS",
+        description:
+            "GET $10 OF ANTHROPIC API CREDITS TO BUILD WITH CLAUDE!",
+        color: "bg-[#d97706]", // Anthropic orange/amber
+        tokens: 2,
+        Icon: SiAnthropic,
+    },
+    {
+        title: "CLOUDFLARE PRO",
+        description:
+            "ONE MONTH OF CLOUDFLARE PRO FOR WEB PERFORMANCE & SECURITY!",
+        color: "bg-[#f38020]", // Cloudflare orange
+        tokens: 4,
+        Icon: SiCloudflare,
+    },
+    {
+        title: "DIGITALOCEAN CREDITS",
+        description:
+            "GET $25 OF DIGITALOCEAN CREDITS FOR CLOUD INFRASTRUCTURE!",
+        color: "bg-[#0080ff]", // DigitalOcean blue
+        tokens: 5,
+        Icon: SiDigitalocean,
+    },
+    {
+        title: "DISCORD NITRO",
+        description: "ONE MONTH OF DISCORD NITRO!",
+        color: "bg-[#5865F2]", // Discord blurple
+        tokens: 2,
+        icon: "🎮",
+    },
+    {
+        title: "SMOLHAJ PLUSHIE",
+        description: "FRIEND SHARK. DELIVERED TO YOUR DOOR.",
+        color: "bg-[#0ea5e9]", // Ocean blue for shark
+        tokens: 6,
+        icon: "🦈",
+    },
+    {
+        title: "HACK CLUB STICKERS",
+        description: "EXCLUSIVE HACK CLUB STICKER PACK!",
+        color: "bg-[#ec3750]", // Hack Club red
+        tokens: 1,
+        icon: "🏴",
+    },
+];
+
 export const ShopSection = (): JSX.Element => {
-    // Define card data to avoid repetition
-    const topRowCards = [
-        {
-            title: "HETZNER SERVER",
-            description:
-                "GET $5 OF HETZNER CREDITS TO HOST YOUR NEXT PROJECT AND MAKE IT LIVE!",
-            color: "bg-[#d83a2c]", // Hetzner red
-            tokens: 1,
-            Icon: SiHetzner,
-        },
-        {
-            title: "PORKBUN CREDITS",
-            description:
-                "GET $10 OF PORKBUN CREDITS FOR DOMAINS AND DNS MANAGEMENT!",
-            color: "bg-[#ff6b35]", // Porkbun orange
-            tokens: 2,
-            icon: "🐷",
-        },
-        {
-            title: "VERCEL PRO",
-            description:
-                "DEPLOY YOUR PROJECTS WITH VERCEL PRO FOR ONE MONTH!",
-            color: "bg-[#000000]", // Vercel black
-            tokens: 4,
-            Icon: SiVercel,
-        },
-        {
-            title: "CURSOR PRO",
-            description:
-                "ONE MONTH OF CURSOR PRO - THE AI-POWERED CODE EDITOR!",
-            color: "bg-[#1e1e1e]", // Cursor dark theme
-            tokens: 4,
-            icon: "🤖",
-        },
-        {
-            title: "SUPABASE PRO",
-            description:
-                "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE AND AUTH NEEDS!",
-            color: "bg-[#3ecf8e]", // Supabase green
-            tokens: 5,
-            Icon: SiSupabase,
-        },
-        {
-            title: "PLANETSCALE",
-            description:
-                "SERVERLESS MYSQL PLATFORM - ONE MONTH OF PRO PLAN. ONE OF THE FASTEST DB SERVICES MONEY CAN BUY.",
-            color: "bg-[#000000]", // PlanetScale black
-            tokens: 8,
-            Icon: SiPlanetscale,
-        },
-    ];
-
-    const bottomRowCards = [
-        {
-            title: "ANTHROPIC CREDITS",
-            description:
-                "GET $10 OF ANTHROPIC API CREDITS TO BUILD WITH CLAUDE!",
-            color: "bg-[#d97706]", // Anthropic orange/amber
-            tokens: 2,
-            Icon: SiAnthropic,
-        },
-        {
-            title: "CLOUDFLARE PRO",
-            description:
-                "ONE MONTH OF CLOUDFLARE PRO FOR FAST, SECURE WEB PERFORMANCE!",
-            color: "bg-[#f38020]", // Cloudflare orange
-            tokens: 4,
-            Icon: SiCloudflare,
-        },
-        {
-            title: "DIGITALOCEAN",
-            description:
-                "GET $25 OF DIGITALOCEAN CREDITS FOR CLOUD INFRASTRUCTURE!",
-            color: "bg-[#0080ff]", // DigitalOcean blue
-            tokens: 5,
-            Icon: SiDigitalocean,
-        },
-        {
-            title: "LINEAR PRO",
-            description:
-                "THREE MONTHS OF LINEAR PRO FOR PROJECT MANAGEMENT!",
-            color: "bg-[#5e6ad2]", // Linear purple
-            tokens: 6,
-            Icon: SiLinear,
-        },
-        {
-            title: "SMOLHAJ PLUSHIE",
-            description:
-                "THE LEGENDARY SMOLHAJ BLAHAJ PLUSHIE DELIVERED TO YOUR DOOR!",
-            color: "bg-[#0ea5e9]", // Ocean blue for shark
-            tokens: 10,
-            icon: "🦈",
-        },
-        {
-            title: "HACK CLUB STICKERS",
-            description:
-                "EXCLUSIVE HACK CLUB STICKER PACK TO DECORATE YOUR LAPTOP!",
-            color: "bg-[#ec3750]", // Hack Club red
-            tokens: 1,
-            icon: "🏴",
-        },
-    ];
-
     return (
         <section className="w-full py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-white to-[#f0f0ff] border-t border-b border-[#e2e2e2]">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
