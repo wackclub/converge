@@ -109,7 +109,7 @@ const bottomRowCards = [
     },
     {
         title: "HACK CLUB STICKERS",
-        description: "EXCLUSIVE HACK CLUB STICKER PACK!",
+        description: "STICKERS! NO EXPLANATION NEEDED HERE.",
         color: "bg-[#ec3750]", // Hack Club red
         tokens: 1,
         icon: "🏴",
