@@ -43,22 +43,34 @@ export const HowItWorksSection = (): JSX.Element => {
                 </h2>
 
                 <div className="font-['Chivo_Mono',Helvetica] font-light text-[#552200] text-2xl text-center mb-16">
-                    <p className="text-pretty">
-                        ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> - CHOOSING A DIFFERENT PLATFORM FOR EACH ONE
-                        IS HIGHLY ENCOURAGED, BUT NOT REQUIRED
-                        <br />▪ OTHER PEOPLE NEED TO BE ABLE TO USE MOST PARTS OF YOUR BOT
-                        <br />▪ FOR EACH HOUR YOU CODE YOUR PROJECTS, YOU GAIN 🪙 ONE TOKEN.{" "}
-                        <b className="font-extrabold">EARN FOUR TOKENS</b> (OR MORE) TO UNLOCK THE SHOP!
-                        <br />▪ IF YOU&apos;RE MAKING BOTS FOR TWO DIFFERENT PLATFORMS, YOU
-                        GET  <b className="font-extrabold">ONE
-                            EXTRA TOKEN</b> FOR EACH PROJECT (SO TWO IN TOTAL)
-                        <br />▪ USE TOKENS TO BUY REWARDS IN THE{" "}
-                        <span className="line-through">SHOP</span>{" "}
-                        <span className="font-normal">EMPORIUM.</span>
-                    </p>
-                </div>
+                    <div className="text-pretty space-y-2">
+                        <p>
+                            ▪ <b className="font-extrabold">BUILD TWO CHATBOTS</b> — choosing a different platform for each one
+                            is highly encouraged, but not required.
+                        </p>
 
-                <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-[26px] text-center mb-8">
+                        <p>
+                            ▪ Other people need to be able to use most parts of your bot.
+                        </p>
+
+                        <p>
+                            ▪ For each hour you code your projects, you gain 🪙 one token.{" "}
+                            <b className="font-extrabold">Earn four tokens</b> (or more) to unlock the shop!
+                        </p>
+
+                        <p>
+                            ▪ If you’re making bots for two different platforms, you get{" "}
+                            <b className="font-extrabold">one extra token</b> for each project (so two in total).
+                        </p>
+
+                        <p>
+                            ▪ Use tokens to buy rewards in the{" "}
+                            <span className="line-through">shop</span>{" "}
+                            <span className="font-normal">emporium</span>.
+                        </p>
+                    </div>
+                </div>
+                <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-[26dx] text-center mb-8">
                     SUPPORTED PLATFORMS
                 </h3>
 

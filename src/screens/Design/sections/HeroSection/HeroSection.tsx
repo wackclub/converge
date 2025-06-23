@@ -3,37 +3,101 @@ import { Button } from "../../../../components/ui/button";
 
 export const HeroSection = (): JSX.Element => {
     return (
-        <section className="relative w-full py-32 bg-[#fff3d8]">
-            <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
-                <h1 className="[font-family:'Chivo',Helvetica] font-semibold text-[#552200] text-9xl tracking-[0] leading-normal">
-                    CONVERGE
-                </h1>
+        <section className="relative w-full py-32 overflow-hidden">
+            {/* Enhanced Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#fff3d8] via-[#ffedc4] to-[#ffe8b0]" />
 
-                <h2 className="[font-family:'Chivo_Mono',Helvetica] font-semibold text-[#552200] text-4xl tracking-[0] leading-normal">
+            {/* Geometric Patterns */}
+            <div className="absolute inset-0 opacity-5">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
+                            <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#552200" strokeWidth="0.3" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            {/* Subtle decorative elements */}
+            <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-[#fc7e3b]/10 to-transparent rounded-full blur-2xl" />
+            <div className="absolute bottom-32 right-32 w-24 h-24 bg-gradient-to-r from-[#552200]/8 to-transparent rounded-full blur-xl" />
+            <div className="absolute top-1/3 right-20 w-20 h-20 bg-gradient-to-r from-[#3d3028]/10 to-transparent rounded-full blur-lg" />
+
+            <div className="relative flex flex-col items-center justify-center text-center max-w-4xl mx-auto px-4">
+                {/* Enhanced Main Title */}
+                <div className="relative mb-8">
+                    <h1
+                        className="[font-family:'Chivo',Helvetica] font-bold text-[#552200] text-6xl md:text-8xl lg:text-9xl tracking-wide leading-tight"
+                        style={{
+                            textShadow: '0 6px 25px rgba(85, 34, 0, 0.25)',
+                            background: 'linear-gradient(135deg, #552200 0%, #885544 50%, #552200 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            backgroundClip: 'text'
+                        }}
+                    >
+                        CONVERGE
+                    </h1>
+
+                    {/* Static underline effect */}
+                    <div
+                        className="absolute -bottom-2 left-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-[#fc7e3b] to-transparent transform -translate-x-1/2"
+                        style={{
+                            boxShadow: '0 0 20px rgba(252, 126, 59, 0.4)'
+                        }}
+                    />
+                </div>
+
+                {/* Enhanced Subtitle */}
+                <h2
+                    className="[font-family:'Chivo_Mono',Helvetica] font-semibold text-[#552200] text-2xl md:text-3xl lg:text-4xl tracking-wide leading-relaxed mb-16"
+                    style={{
+                        textShadow: '0 3px 15px rgba(85, 34, 0, 0.15)'
+                    }}
+                >
                     BUILD CHATBOTS, WIN PRIZES
                 </h2>
 
-                <div className="flex items-start gap-6 mt-12">
-                    <div className="relative">
+                {/* Enhanced Button Section */}
+                <div className="flex flex-col sm:flex-row items-center gap-8">
+                    <div className="relative group">
                         <a href="https://forms.hackclub.com/converge-signup">
-                            <Button className="h-[77px] w-[261px] bg-[#fc7e3b] hover:bg-[#fc7e3b]/90 rounded [font-family:'Chivo_Mono',Helvetica] font-medium text-white text-2xl">
-                                SIGN UP &gt;:)
+                            <Button
+                                className="relative h-20 w-72 bg-gradient-to-r from-[#fc7e3b] to-[#ff6b28] hover:from-[#ff6b28] hover:to-[#fc7e3b] rounded-xl [font-family:'Chivo_Mono',Helvetica] font-bold text-white text-xl shadow-2xl transform hover:scale-105 transition-all duration-200"
+                                style={{
+                                    boxShadow: '0 12px 40px rgba(252, 126, 59, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+                                }}
+                            >
+                                <span className="relative z-10">SIGN UP &gt;:)</span>
+
+                                {/* Subtle inner glow */}
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/10 to-white/5" />
                             </Button>
                         </a>
+
+                        {/* Enhanced decorative image */}
                         <img
-                            className="w-[67px] h-[67px] absolute -left-6 -top-4 object-cover"
-                            style={{ transform: 'rotate(4deg)' }}
-                            alt="Image"
+                            className="w-16 h-16 absolute -left-8 -top-6 object-cover transform rotate-6 hover:scale-110 hover:rotate-12 transition-transform duration-200"
+                            style={{
+                                filter: 'drop-shadow(0 6px 15px rgba(252, 126, 59, 0.3))'
+                            }}
+                            alt="Decorative element"
                             src="https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-1.png"
                         />
                     </div>
 
-                    <a href="#ideas">
+                    <a href="#ideas" className="group">
                         <Button
-                            variant="default"
-                            className="h-[77px] w-[261px] bg-[#3d3028] hover:bg-[#3d3028]/90 rounded [font-family:'Chivo_Mono',Helvetica] font-medium text-white text-2xl"
+                            className="relative h-20 w-72 bg-gradient-to-r from-[#3d3028] to-[#2a221a] hover:from-[#2a221a] hover:to-[#3d3028] rounded-xl [font-family:'Chivo_Mono',Helvetica] font-bold text-white text-xl shadow-2xl transform hover:scale-105 transition-all duration-200 overflow-hidden"
+                            style={{
+                                boxShadow: '0 12px 40px rgba(61, 48, 40, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
+                            }}
                         >
-                            I NEED IDEAS!
+                            <span className="relative z-10">I NEED IDEAS!</span>
+
+                            {/* Subtle inner glow */}
+                            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-white/10" />
                         </Button>
                     </a>
                 </div>
