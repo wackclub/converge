@@ -24,8 +24,8 @@ export const HelpSection = (): JSX.Element => {
 
     return (
         <section className="w-full py-14 bg-white border-t border-b border-[#e2e2e2] flex flex-col items-center px-4 sm:px-8">
-            <h2 className="text-4xl sm:text-6xl text-center [font-family:'Chivo',Helvetica] font-bold text-[#552200] mb-4">
-                NEED HELP?
+            <h2 className="text-4xl sm:text-6xl text-center [font-family:'Fraunces',Helvetica] font-bold text-[#552200] mb-4">
+                Need help?
             </h2>
 
             <p className="[font-family:'Fraunces',Helvetica] text-[#552200] text-lg sm:text-2xl text-center mb-10">

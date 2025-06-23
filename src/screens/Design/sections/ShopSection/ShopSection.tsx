@@ -120,8 +120,8 @@ export const ShopSection = (): JSX.Element => {
     return (
         <section className="w-full py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-white to-[#f0f0ff] border-t border-b border-[#e2e2e2]">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center [font-family:'Chivo',Helvetica] font-bold text-[#552200] mb-2 sm:mb-4">
-                    THE EMPORIUM
+                <h2 className="text-4xl sm:text-6xl text-center [font-family:'Fraunces',Helvetica] font-bold text-[#552200] mb-4">
+                    The Emporium
                 </h2>
                 <p className="sm:text-base md:text-xl lg:text-2xl text-center [font-family:'Fraunces',Helvetica] text-[#552200] mb-8 sm:mb-10 lg:mb-12 px-4">
                     Spend your hard-earned tokens for some awesome rewards!
