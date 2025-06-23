@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { Button } from "../../../../components/ui/button";
+import { Sparkles, Loader2 } from "lucide-react";
 
 export const IdeasSection = (): JSX.Element => {
+    const [isGenerating, setIsGenerating] = useState(false);
+
     // Ideas for each platform
-    const platformIdeas = [
+    const [platformIdeas, setPlatformIdeas] = useState([
         {
             platform: "SLACK",
             idea: "A MEETING SCHEDULER BOT THAT HELPS PEOPLE FIND THE BEST TIME TO MEET BASED ON EVERYONE'S AVAILABILITY + TIMEZONES"
@@ -20,7 +24,53 @@ export const IdeasSection = (): JSX.Element => {
             platform: "TELEGRAM",
             idea: "A DAILY NEWS DIGEST BOT THAT SENDS PERSONALIZED NEWS SUMMARIES WITH RSS FEEDS"
         }
-    ];
+    ]);
+
+    const generateNewIdeas = async () => {
+        setIsGenerating(true);
+        try {
+            const response = await fetch('https://ai.hackclub.com/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    messages: [{
+                        role: 'user',
+                        content: `Generate 4 creative and unique bot ideas for different messaging platforms (Slack, Discord, Signal, Telegram). Each idea should be practical, fun, and something teenagers would actually want to build and use. Format your response as JSON with this structure:
+[
+  {"platform": "SLACK", "idea": "DESCRIPTION IN ALL CAPS"},
+  {"platform": "DISCORD", "idea": "DESCRIPTION IN ALL CAPS"},
+  {"platform": "SIGNAL", "idea": "DESCRIPTION IN ALL CAPS"},
+  {"platform": "TELEGRAM", "idea": "DESCRIPTION IN ALL CAPS"}
+]
+
+Make the ideas creative and different from typical bots - think about things like productivity, entertainment, community building, or unique utilities that would be genuinely useful or fun. Keep the ideas short and snappy.`
+                    }]
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const content = data.choices[0].message.content;
+
+                // Try to parse the JSON response
+                try {
+                    const newIdeas = JSON.parse(content);
+                    if (Array.isArray(newIdeas) && newIdeas.length === 4) {
+                        setPlatformIdeas(newIdeas);
+                    }
+                } catch (parseError) {
+                    // If JSON parsing fails, try to extract ideas from the text
+                    console.log('Failed to parse JSON, using fallback');
+                }
+            }
+        } catch (error) {
+            console.error('Error generating ideas:', error);
+        } finally {
+            setIsGenerating(false);
+        }
+    };
 
     return (
         <section className="w-full py-14 bg-[#fffcf6] border-t border-b border-[#e2e2e2]" id="ideas">
@@ -37,7 +87,7 @@ export const IdeasSection = (): JSX.Element => {
                     {platformIdeas.map((item, index) => (
                         <Card
                             key={index}
-                            className="bg-[#f5e9d4] rounded-xl border-none"
+                            className="bg-[#f5e9d4] rounded-xl border-none transition-all duration-300 hover:shadow-lg"
                         >
                             <CardContent className="p-6">
                                 <h3 className="font-['Chivo_Mono',Helvetica] font-medium text-[#552200] text-xl mb-2">
@@ -50,6 +100,24 @@ export const IdeasSection = (): JSX.Element => {
                         </Card>
                     ))}
                 </div>
+
+                <Button
+                    onClick={generateNewIdeas}
+                    disabled={isGenerating}
+                    className="bg-[#552200] hover:bg-[#441a00] text-white font-['Chivo_Mono',Helvetica] font-medium text-lg px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                >
+                    {isGenerating ? (
+                        <>
+                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                            GENERATING...
+                        </>
+                    ) : (
+                        <>
+                            <Sparkles className="mr-2 h-5 w-5" />
+                            GENERATE NEW IDEAS
+                        </>
+                    )}
+                </Button>
             </div>
         </section>
     );
