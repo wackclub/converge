@@ -56,7 +56,7 @@ export const HeroSection = (): JSX.Element => {
                         textShadow: '0 3px 15px rgba(85, 34, 0, 0.15)'
                     }}
                 >
-                    Build chatbots, win prizes
+                    Build bots, win prizes
                 </h2>
 
                 {/* Enhanced Button Section */}

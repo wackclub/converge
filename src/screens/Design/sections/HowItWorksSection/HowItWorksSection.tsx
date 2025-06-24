@@ -44,7 +44,7 @@ export const HowItWorksSection = (): JSX.Element => {
 
                 <div className="font-['Fraunces',Helvetica] text-[#552200] text-xl sm:text-3xl text-center mb-16">
                     <div className="text-pretty space-y-4">
-                        <p><b className="font-extrabold">▪ Build two chatbots.</b> Ideally on <i>different</i> platforms (but it’s not required).</p>
+                        <p><b className="font-extrabold">▪ Build two bots.</b> Ideally on <i>different</i> platforms (but it’s not required).</p>
 
                         <p><b className="font-extrabold">▪ Make them usable.</b> Other people should be able to interact with most parts of your bots.</p>
 
