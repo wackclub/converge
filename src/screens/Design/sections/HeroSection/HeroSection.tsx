@@ -101,7 +101,7 @@ export const HeroSection = (): JSX.Element => {
                         </Button>
                     </a>
                 </div>
-                <p className="[font-family:'Chivo_Mono',Helvetica] text-[#552200] text-md tracking-wide leading-relaxed mt-8">Not part of Hack Club? Sign up to <a href="https://hackclub.com/slack" className="underline">Summer of Making</a><br />to participate (it's free!)</p>
+                <p className="[font-family:'Chivo_Mono',Helvetica] text-[#552200] text-md tracking-wide leading-relaxed mt-8">For teens aged 18 and under. Not part of Hack Club?<br />Sign up to <a href="https://hackclub.com/slack" className="underline">Summer of Making</a> to participate (it's free!)</p>
             </div>
         </section>
     );
