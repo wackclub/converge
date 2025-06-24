@@ -50,7 +50,7 @@ export const HowItWorksSection = (): JSX.Element => {
 
                         <p><b className="font-extrabold">▪ Earn 🪙 1 token per hour</b> of coding (max 10 tokens). Hit <b className="font-extrabold">4 tokens</b> to unlock the <i>Emporium.</i></p>
 
-                        <p><b className="font-extrabold">▪ Bonus tokens:</b> Use two different platforms? You get <b className="font-extrabold">+1 token per bot</b> — that’s <b className="font-extrabold">2 extra tokens</b>.</p>
+                        <p><b className="font-extrabold">▪ Bonus tokens:</b> Use two different platforms? You get <b className="font-extrabold">+1 token per bot</b> - that’s <b className="font-extrabold">2 extra tokens</b>.</p>
 
                         <p><b className="font-extrabold">▪ Spend your tokens</b> on rewards in the Emporium.</p>
                     </div>
