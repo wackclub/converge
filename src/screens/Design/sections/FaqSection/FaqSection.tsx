@@ -1,13 +1,11 @@
-import React from "react";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
-
 export const FaqSection = (): JSX.Element => {
     const faqs = [
         ["Can I submit my project to Summer of Making too?", "Absolutely! Just make sure you submit your devlogs on the SoM website."],
         ["Can I submit an existing project?", "You need to create a new project for Converge - existing projects won't be accepted."],
         ["Do I have to use a specific library/language?", "No! Feel free to use the tools you're most comfortable with (but for Slackbots, we'd recommend you use Slack's Bolt libraries)"],
-        ["Does my project need to be open source?", "Yes. You don't need to include API keys or .env files, but all code/assets needed to make the bot work properly should be in your repo."]
+        ["Does my project need to be open source?", "Yes. You don't need to include API keys or .env files, but all code/assets needed to make the bot work properly should be in your repo."],
+        ["Can I submit my project to Thunder?", "Yes, if you're working on a Slackbot, you can submit that bot to Thunder too. However, your tokens will be <b>reduced by 50%.</b> Keep that in mind whilst working on your project!"],
+        ["Will there be workshops/guides on how to build my bots?", "Yes! Keep your eyes peeled on the #converge channel for more info."]
     ]
 
     return (
@@ -26,9 +24,7 @@ export const FaqSection = (): JSX.Element => {
                         <h3 className="[font-family:'Fraunces',Helvetica] font-extrabold sm:text-xl text-pretty">
                             {question}
                         </h3>
-                        <p className="[font-family:'Fraunces',Helvetica] text-xl mt-2 text-pretty">
-                            {answer}
-                        </p>
+                        <p className="[font-family:'Fraunces',Helvetica] text-xl mt-2 text-pretty" dangerouslySetInnerHTML={{ __html: answer }} />
                     </div>
                 ))}
             </div>
