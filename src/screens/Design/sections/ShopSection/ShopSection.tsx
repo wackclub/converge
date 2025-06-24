@@ -85,7 +85,7 @@ const bottomRowCards = [
         icon: "🎮",
     },
     {
-        title: "SMOLHAJ PLUSHIE",
+        title: "BLAHAJ PLUSHIE",
         description: "FRIEND SHARK. DELIVERED TO YOUR DOOR.",
         color: "bg-[#0ea5e9]", // Ocean blue for shark
         tokens: 6,
