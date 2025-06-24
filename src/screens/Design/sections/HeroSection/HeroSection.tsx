@@ -87,14 +87,14 @@ export const HeroSection = (): JSX.Element => {
                         />
                     </div>
 
-                    <a href="#ideas" className="group w-full sm:w-auto">
+                    <a href="https://forms.hackclub.com/converge-submit" className="group w-full sm:w-auto">
                         <Button
                             className="relative h-16 sm:h-20 w-full sm:w-72 bg-gradient-to-r from-[#3d3028] to-[#2a221a] hover:from-[#2a221a] hover:to-[#3d3028] rounded-xl [font-family:'Fraunces',Helvetica] font-bold text-white text-lg sm:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-200 overflow-hidden"
                             style={{
                                 boxShadow: '0 12px 40px rgba(61, 48, 40, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
                             }}
                         >
-                            <span className="relative z-10">I need ideas!</span>
+                            <span className="relative z-10">Submit to Converge</span>
 
                             {/* Subtle inner glow */}
                             <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-white/10" />
