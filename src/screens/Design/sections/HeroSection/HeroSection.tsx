@@ -94,13 +94,14 @@ export const HeroSection = (): JSX.Element => {
                                 boxShadow: '0 12px 40px rgba(61, 48, 40, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
                             }}
                         >
-                            <span className="relative z-10">Submit to Converge</span>
+                            <span className="relative z-10">submit to converge</span>
 
                             {/* Subtle inner glow */}
                             <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-white/10" />
                         </Button>
                     </a>
                 </div>
+                <p className="[font-family:'Chivo_Mono',Helvetica] text-[#552200] text-md tracking-wide leading-relaxed mt-8">Not part of Hack Club? Sign up to <a href="https://hackclub.com/slack" className="underline">Summer of Making</a><br />to participate (it's free!)</p>
             </div>
         </section>
     );
