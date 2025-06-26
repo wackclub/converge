@@ -44,14 +44,10 @@ export const HowItWorksSection = (): JSX.Element => {
 
                 <div className="font-['Fraunces',Helvetica] text-[#552200] text-xl sm:text-3xl text-center mb-16">
                     <div className="text-pretty space-y-4">
-                        <p><b className="font-extrabold">▪ Build two bots.</b> Ideally on <i>different</i> platforms (but it’s not required).</p>
-
-                        <p><b className="font-extrabold">▪ Make them usable.</b> Other people should be able to interact with most parts of your bots.</p>
-
-                        <p><b className="font-extrabold">▪ Earn 🪙 1 token per hour</b> of coding (max 10 tokens). Hit <b className="font-extrabold">4 tokens</b> to unlock the <i>Emporium.</i></p>
-
-                        <p><b className="font-extrabold">▪ Bonus tokens:</b> Use two different platforms? You get <b className="font-extrabold">+1 token per bot</b> - that’s <b className="font-extrabold">2 extra tokens</b>.</p>
-
+                        <p><b className="font-extrabold">▪ Build one or more bots for a chat app</b> - ideally on <i>different</i> platforms (but that’s optional).</p>
+                        <p><b className="font-extrabold">▪ Make them usable.</b> Other people should be able to interact with your bots for themselves.</p>
+                        <p><b className="font-extrabold">▪ Earn 🪙 1 token per hour</b> of coding (max 10 tokens). You can split the time across multiple bots - but you’ll need to clock <b className="font-extrabold">at least 4 hours total</b> to unlock the <i>Emporium</i>.</p>
+                        <p><b className="font-extrabold">▪ Bonus tokens:</b> Use more than one platform? You get <b className="font-extrabold">+1 token per platform</b> you use to create your bot(s)</p>
                         <p><b className="font-extrabold">▪ Spend your tokens</b> on rewards in the Emporium.</p>
                     </div>
                 </div>
