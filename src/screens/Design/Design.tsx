@@ -6,13 +6,105 @@ import { HeroSection } from "./sections/HeroSection";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { IdeasSection } from "./sections/IdeasSection";
 import { ShopSection } from "./sections/ShopSection";
+import {
+    SiHetzner,
+    SiVercel,
+    SiSupabase,
+    SiAnthropic,
+    SiCloudflare,
+    SiDigitalocean,
+    SiGoogleplay,
+} from "@icons-pack/react-simple-icons";
 
 export const Design = (): JSX.Element => {
+
+    const topRowCards = [
+        {
+            title: "$5 HETZNER CREDITS",
+            description:
+                "HOST YOUR NEXT PROJECT WITH HETZNER (ONE OF THE BEST BUDGET SERVER PROVIDERS AROUND)",
+            color: "bg-[#d83a2c]", // Hetzner red
+            tokens: 1,
+            Icon: SiHetzner,
+        },
+        {
+            title: "PORKBUN CREDITS",
+            description:
+                "GET $10 OF PORKBUN CREDITS TO BUY DOMAINS",
+            color: "bg-[#ff6b35]", // Porkbun orange
+            tokens: 2,
+            icon: "🐷",
+        },
+        {
+            title: "CURSOR PRO",
+            description:
+                "ONE MONTH OF CURSOR PRO - THE AI-POWERED CODE EDITOR",
+            color: "bg-[#1e1e1e]", // Cursor dark theme
+            tokens: 4,
+            icon: "🤖",
+        },
+        {
+            title: "SUPABASE PRO",
+            description:
+                "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE & AUTH NEEDS",
+            color: "bg-[#3ecf8e]", // Supabase green
+            tokens: 5,
+            Icon: SiSupabase,
+        },
+        {
+            title: "GOOGLE PLAY DEVELOPER LICENSE",
+            description: "PUBLISH YOUR ANDROID APPS TO THE WORLD. LIFETIME LICENSE.",
+            color: "bg-[#4285F4]", // Google blue
+            tokens: 5,
+            Icon: SiGoogleplay,
+        },
+    ];
+
+    const bottomRowCards = [
+        {
+            title: "ANTHROPIC CREDITS",
+            description:
+                "GET $10 OF ANTHROPIC API CREDITS TO BUILD WITH CLAUDE!",
+            color: "bg-[#d97706]", // Anthropic orange/amber
+            tokens: 2,
+            Icon: SiAnthropic,
+        },
+        {
+            title: "$20 CLOUDFLARE CREDITS",
+            description:
+                "PERFECT FOR HOSTING WEBSITES (WITH WORKERS & PAGES), STORING IMAGES AND DATA (WITH R2 AND CF IMAGES), AND PROTECTING YOUR WEBSITES FROM DDoS ATTACKS.",
+            color: "bg-[#f38020]", // Cloudflare orange
+            tokens: 4,
+            Icon: SiCloudflare,
+        },
+        {
+            title: "DISCORD NITRO",
+            description: "ONE MONTH OF DISCORD NITRO!",
+            color: "bg-[#5865F2]", // Discord blurple
+            tokens: 2,
+            icon: "🎮",
+        },
+        {
+            title: "BLAHAJ PLUSHIE",
+            description: "FRIEND SHARK. DELIVERED TO YOUR DOOR.",
+            color: "bg-[#0ea5e9]", // Ocean blue for shark
+            tokens: 6,
+            icon: "🦈",
+        },
+        {
+            title: "HACK CLUB STICKERS",
+            description: "STICKERS! NO EXPLANATION NEEDED HERE.",
+            color: "bg-[#ec3750]", // Hack Club red
+            tokens: 1,
+            icon: "🏴",
+        },
+    ];
+
     return (
         <main className="flex flex-col w-full bg-[#fbfaf9]" data-model-id="3:27">
             <HeroSection />
             <HowItWorksSection />
-            <ShopSection />
+            <ShopSection topRowCards={topRowCards} bottomRowCards={bottomRowCards} />
             <IdeasSection />
             <FaqSection />
             <HelpSection />
