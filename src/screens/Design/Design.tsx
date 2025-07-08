@@ -48,7 +48,7 @@ export const Design = (): JSX.Element => {
                 "@CHANNEL SHIRT. LIMITED EDITION",
             color: "bg-[#3ecf8e]", // Supabase green
             tokens: 3,
-            Icon: "👕",
+            icon: "👕",
         },
         {
             title: "GOOGLE PLAY DEVELOPER LICENSE",
