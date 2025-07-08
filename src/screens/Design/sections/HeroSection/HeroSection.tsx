@@ -25,7 +25,6 @@ export const HeroSection = (): JSX.Element => {
             <div className="absolute top-1/3 right-5 sm:right-20 w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r from-[#3d3028]/10 to-transparent rounded-full blur-lg hidden md:block" />
 
             <div className="relative flex flex-col items-center justify-center text-center max-w-4xl mx-auto px-4">
-                {/* Enhanced Main Title */}
                 <div className="relative mb-6 sm:mb-8">
                     <h1
                         className="[font-family:'Fraunces',Helvetica] font-bold text-[#552200] text-4xl sm:text-6xl lg:text-8xl tracking-wide leading-tight"

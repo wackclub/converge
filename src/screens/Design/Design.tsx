@@ -17,7 +17,6 @@ import {
 } from "@icons-pack/react-simple-icons";
 
 export const Design = (): JSX.Element => {
-
     const topRowCards = [
         {
             title: "$5 HETZNER CREDITS",
@@ -44,12 +43,12 @@ export const Design = (): JSX.Element => {
             icon: "🤖",
         },
         {
-            title: "SUPABASE PRO",
+            title: "ATCHANNEL SHIRT",
             description:
-                "ONE MONTH OF SUPABASE PRO FOR YOUR DATABASE & AUTH NEEDS",
+                "@CHANNEL SHIRT. LIMITED EDITION",
             color: "bg-[#3ecf8e]", // Supabase green
-            tokens: 5,
-            Icon: SiSupabase,
+            tokens: 3,
+            Icon: "👕",
         },
         {
             title: "GOOGLE PLAY DEVELOPER LICENSE",
@@ -62,12 +61,12 @@ export const Design = (): JSX.Element => {
 
     const bottomRowCards = [
         {
-            title: "ANTHROPIC CREDITS",
+            title: "AI CREDITS",
             description:
-                "GET $10 OF ANTHROPIC API CREDITS TO BUILD WITH CLAUDE!",
+                "GET $10 OF ANTHROPIC/OPENAI/OPENROUTER API CREDITS TO BUILD WITH AI MODELS",
             color: "bg-[#d97706]", // Anthropic orange/amber
             tokens: 2,
-            Icon: SiAnthropic,
+            icon: "🤖",
         },
         {
             title: "$20 CLOUDFLARE CREDITS",
@@ -95,6 +94,13 @@ export const Design = (): JSX.Element => {
             title: "HACK CLUB STICKERS",
             description: "STICKERS! NO EXPLANATION NEEDED HERE.",
             color: "bg-[#ec3750]", // Hack Club red
+            tokens: 1,
+            icon: "🏴",
+        },
+        {
+            title: "GREENCLOUD VPS CREDITS",
+            description: "$5 CREDITS. BUDGET PROVIDER, BUT CAN HAVE BAD SUPPORT.",
+            color: "bg-[#007a6d]", // Hack Club red
             tokens: 1,
             icon: "🏴",
         },
