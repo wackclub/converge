@@ -98,9 +98,9 @@ export const Design = (): JSX.Element => {
             icon: "🏴",
         },
         {
-            title: "HACK CLUB STICKERS",
-            description: "STICKERS! NO EXPLANATION NEEDED HERE.",
-            color: "bg-[#ec3750]", // Hack Club red
+            title: "GREENCLOUD VPS CREDITS",
+            description: "$5 CREDITS. BUDGET PROVIDER, BUT CAN HAVE BAD SUPPORT.",
+            color: "bg-[#007a6d]", // Hack Club red
             tokens: 1,
             icon: "🏴",
         },
