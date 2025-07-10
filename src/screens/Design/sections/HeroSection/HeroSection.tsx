@@ -4,10 +4,8 @@ import { Button } from "../../../../components/ui/button";
 export const HeroSection = (): JSX.Element => {
     return (
         <section className="relative w-full py-20 sm:py-32 overflow-hidden">
-            {/* Enhanced Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#fff3d8] via-[#ffedc4] to-[#ffe8b0]" />
 
-            {/* Geometric Patterns (hidden on mobile) */}
             <div className="absolute inset-0 opacity-5 hidden sm:block">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <defs>
@@ -19,7 +17,6 @@ export const HeroSection = (): JSX.Element => {
                 </svg>
             </div>
 
-            {/* Subtle decorative elements (show on md+) */}
             <div className="absolute top-20 left-5 sm:left-20 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-r from-[#fc7e3b]/10 to-transparent rounded-full blur-2xl hidden md:block" />
             <div className="absolute bottom-20 right-5 sm:bottom-32 sm:right-32 w-16 sm:w-24 h-16 sm:h-24 bg-gradient-to-r from-[#552200]/8 to-transparent rounded-full blur-xl hidden md:block" />
             <div className="absolute top-1/3 right-5 sm:right-20 w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r from-[#3d3028]/10 to-transparent rounded-full blur-lg hidden md:block" />
@@ -39,7 +36,6 @@ export const HeroSection = (): JSX.Element => {
                         CONVERGE
                     </h1>
 
-                    {/* Static underline effect */}
                     <div
                         className="absolute -bottom-2 left-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-[#fc7e3b] to-transparent transform -translate-x-1/2"
                         style={{
@@ -48,7 +44,6 @@ export const HeroSection = (): JSX.Element => {
                     />
                 </div>
 
-                {/* Enhanced Subtitle */}
                 <h2
                     className="[font-family:'Fraunces',Helvetica] font-semibold text-[#552200] text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wide leading-relaxed mb-12 sm:mb-16"
                     style={{
@@ -58,7 +53,6 @@ export const HeroSection = (): JSX.Element => {
                     Build bots, win prizes
                 </h2>
 
-                {/* Enhanced Button Section */}
                 <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 w-full sm:w-auto">
                     <div className="relative group w-full sm:w-auto">
                         <a href="https://forms.hackclub.com/converge-signup">
@@ -70,19 +64,17 @@ export const HeroSection = (): JSX.Element => {
                             >
                                 <span className="relative z-10 [font-family:'Fraunces',Helvetica]">sign up &gt;:)</span>
 
-                                {/* Subtle inner glow */}
                                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/10 to-white/5" />
                             </Button>
                         </a>
 
-                        {/* Decorative image (hidden on small) */}
                         <img
                             className="w-12 h-12 sm:w-16 sm:h-16 absolute -left-6 -top-6 object-cover transform rotate-6 hover:scale-110 hover:rotate-12 transition-transform duration-200 hidden sm:block"
                             style={{
                                 filter: 'drop-shadow(0 6px 15px rgba(252, 126, 59, 0.3))'
                             }}
                             alt="Decorative element"
-                            src="https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-1.png"
+                            src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5faf84562045e3887c2c92757e5218e172e747bc_image.png"
                         />
                     </div>
 
@@ -95,7 +87,6 @@ export const HeroSection = (): JSX.Element => {
                         >
                             <span className="relative z-10">submit to converge</span>
 
-                            {/* Subtle inner glow */}
                             <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-white/10" />
                         </Button>
                     </a>
