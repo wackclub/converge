@@ -2,11 +2,10 @@ import React from "react";
 import { Button } from "../../../../components/ui/button";
 
 export const HowItWorksSection = (): JSX.Element => {
-    // Platform data for mapping
     const platforms = [
         {
             name: "SLACK",
-            image: "https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-2.png",
+            image: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/cd03affb3117df3e7ed2f9d676c959bdbbe1dc6a_image.png",
             width: "w-16",
             height: "h-16",
             leftPosition: "left-0",
@@ -14,21 +13,21 @@ export const HowItWorksSection = (): JSX.Element => {
         {
             name: "DISCORD",
             image:
-                "https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-removebg-preview--1--1.png",
+                "https://hc-cdn.hel1.your-objectstorage.com/s/v3/d288686d13f35b3c3bc45ca6ed016f2aa1c32eb8_image.png",
             width: "w-16",
             height: "h-16",
             leftPosition: "left-0.5",
         },
         {
             name: "SIGNAL",
-            image: "https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-3.png",
+            image: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/14f040db9b39e738a0be750096b8663473d5ccca_image.png",
             width: "w-16",
             height: "h-16",
             leftPosition: "left-0 rounded-[10px]",
         },
         {
             name: "TELEGRAM",
-            image: "https://c.animaapp.com/mc7vj4gxgq9MVb/img/image-4.png",
+            image: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/11bdee9c24e012c070e079bfa8dd36885ad2f419_image.png",
             width: "w-16",
             height: "h-16",
             leftPosition: "left-[7px]",

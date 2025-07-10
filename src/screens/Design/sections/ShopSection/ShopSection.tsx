@@ -19,7 +19,6 @@ export const ShopSection = ({ topRowCards, bottomRowCards }): JSX.Element => {
                     Spend your hard-earned tokens for some awesome rewards!
                 </p>
 
-                {/* Top Row Carousel */}
                 <Carousel
                     opts={{
                         align: "start",
@@ -61,7 +60,6 @@ export const ShopSection = ({ topRowCards, bottomRowCards }): JSX.Element => {
                     <CarouselNext className="hidden sm:flex" />
                 </Carousel>
 
-                {/* Bottom Row Carousel */}
                 <Carousel
                     opts={{
                         align: "start",
@@ -103,7 +101,6 @@ export const ShopSection = ({ topRowCards, bottomRowCards }): JSX.Element => {
                     <CarouselNext className="hidden sm:flex" />
                 </Carousel>
 
-                {/* Mobile swipe indicator */}
                 <div className="flex sm:hidden justify-center mt-4">
                     <p className="text-xs text-[#552200]/60 [font-family:'Fraunces',Helvetica]">
                         ← Swipe to see more →
