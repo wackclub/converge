@@ -12,7 +12,7 @@ export const Footer = (): JSX.Element => {
                         <p className="[font-family:'Chivo',Helvetica] font-light text-sm opacity-80">
                             MADE WITH {"<3"} BY <a href="https://skyfall.dev/" className="underline" target="_blank">SKYFALL</a>
                             <br />
-                            <span className="hidden sm:block">(and no, <a href="https://www.figma.com/design/mbzJHCEW33WlDGMNRKFWrE/Converge?node-id=0-1&t=l6IEgooSGG0ZZiCv-1" className="underline">the site isn't AI generated</a>, that's just my artstyle)</span>
+                            <span>THANKS TO <a href="https://www.jukeboxprint.com/custom-stickers" className="underline">JUKEBOX</a> FOR THE STICKERS!</span>
                         </p>
                     </div>
 
