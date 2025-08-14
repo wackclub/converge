@@ -74,6 +74,11 @@ export const IdeasSection = (): JSX.Element => {
         return shuffled.slice(0, count);
     };
 
+    const removeThinkTags = (content: string): string => {
+        const thinkTagRegex = /^<think>.*?<\/think>\s*/s;
+        return content.replace(thinkTagRegex, '').trim();
+    };
+
     const generateNewIdeas = async () => {
         setIsGenerating(true);
         const selectedThemes = getRandomThemes();
@@ -105,16 +110,21 @@ and end with ']' (without the quotes.)`
 
             if (response.ok) {
                 const data = await response.json();
-                const content = data.choices[0].message.content;
+                let content = data.choices[0].message.content;
 
                 try {
-                    console.log(content);
+                    // Remove <think> tags before parsing
+                    content = removeThinkTags(content);
+                    console.log('Cleaned content:', content);
+                    
                     const newIdeas = JSON.parse(content);
                     if (Array.isArray(newIdeas) && newIdeas.length === 4) {
                         setPlatformIdeas(newIdeas);
+                    } else {
+                        console.log('Invalid ideas format, using fallback');
                     }
                 } catch (parseError) {
-                    console.log('Failed to parse JSON, using fallback');
+                    console.log('Failed to parse JSON, using fallback:', parseError);
                 }
             }
         } catch (error) {
