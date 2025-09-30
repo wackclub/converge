@@ -25,11 +25,11 @@ export const HelpSection = (): JSX.Element => {
     return (
         <section className="w-full py-14 bg-white border-t border-b border-[#e2e2e2] flex flex-col items-center px-4 sm:px-8">
             <h2 className="text-4xl sm:text-6xl text-center [font-family:'Fraunces',Helvetica] font-bold text-[#552200] mb-4">
-                Need help?
+                Needed help?
             </h2>
 
             <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
-                Here are a couple guides to bot dev that could prove helpful. (coming soon!)
+                Here were a couple guides to bot dev that could prove helpful. (they were coming soon but never came!)
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-6 mb-8 w-full">
@@ -51,16 +51,16 @@ export const HelpSection = (): JSX.Element => {
             </div>
 
             <p className="[font-family:'Chivo_Mono',Helvetica] font-light text-[#552200] text-sm sm:text-base text-center mb-6">
-                STILL NEED A HAND? JOIN THE{' '}
+                NEEDED A HAND? THE{' '}
                 <a href="https://hackclub.slack.com/archives/C091UF79VDM" target="_blank" className="underline">
                     #CONVERGE
                 </a>{' '}
-                CHANNEL ON THE SLACK
+                CHANNEL ON SLACK WAS THE PLACE TO BE
             </p>
 
             <a href="https://hackclub.slack.com/archives/C091UF79VDM" target="_blank" className="w-full sm:w-auto flex justify-center">
-                <Button className="bg-[#552200] hover:bg-[#441a00] text-white font-['Fraunces',Helvetica] font-medium text-2xl px-12 py-6 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
-                    add me to the channel!
+                <Button className="bg-[#552200] hover:bg-[#441a00] text-white font-['Fraunces',Helvetica] font-medium text-2xl px-12 py-6 rounded-xl transition-all duration-300 transform hover:scale-105">
+                    check out the archive!
                 </Button>
             </a>
         </section>

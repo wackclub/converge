@@ -138,11 +138,11 @@ and end with ']' (without the quotes.)`
         <section className="w-full py-14 bg-[#fffcf6] border-t border-b border-[#e2e2e2]" id="ideas">
             <div className="flex flex-col items-center max-w-4xl mx-auto px-4">
                 <h2 className="text-4xl sm:text-6xl text-center [font-family:'Fraunces',Helvetica] font-bold text-[#552200] mb-4">
-                    A few ideas...
+                    A few ideas we had...
                 </h2>
 
                 <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
-                    These are just suggestions - feel free to make something that doesn't fit these ideas.
+                    These were just suggestions - people made all sorts of amazing things!
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 w-full">
@@ -179,7 +179,7 @@ and end with ']' (without the quotes.)`
                     ) : (
                         <>
                             <Sparkles className="mr-2 h-5 w-5" />
-                            gimme more!
+                            generate more ideas!
                         </>
                     )}
                 </Button>
