@@ -15,7 +15,7 @@ export const FaqSection = (): JSX.Element => {
             </h2>
 
             <p className="font-['Fraunces',Helvetica] text-[#552200] text-2xl text-center mb-10 text-pretty">
-                Got questions? We've got answers.
+                Got questions? We had answers.
             </p>
 
             <div className="flex flex-col sm:grid grid-cols-2 items-stretch justify-center gap-4 sm:gap-6 mb-8 w-2/3">
